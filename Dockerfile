@@ -5,7 +5,7 @@
 ####################################################################################################
 ## Create Your Directus Production Image
 
-FROM directus/directus:10.6.1
+FROM directus/directus
 USER root
 RUN corepack enable \
   && corepack prepare pnpm@8.1.1 --activate \
