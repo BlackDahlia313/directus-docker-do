@@ -8,7 +8,7 @@
 FROM directus/directus
 USER root
 RUN corepack enable \
-  && corepack prepare pnpm@9.0.2 --activate \
+  && corepack prepare pnpm@9.4.0 --activate \
   # Currently required, we'll probably address this in the base image in future release
   && chown node:node /directus
 
