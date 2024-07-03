@@ -15,7 +15,7 @@ RUN corepack enable \
 EXPOSE 8055
 
 USER node
-RUN pnpm install directus-extension-field-actions && pnpm config set auto-install-peers true
+RUN pnpm install directus-extension-field-actions && pnpm install directus-extension-flow-manager && pnpm config set auto-install-peers true
 CMD : \
 	&& node /directus/cli.js bootstrap \
 	&& node /directus/cli.js start \
